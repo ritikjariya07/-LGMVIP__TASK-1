@@ -1,0 +1,163 @@
+<?php include 'header.php'; ?>
+<div id="image">
+    	<div id="banner-top" >
+    		<u><i><b><h3 style="text-align:center">WHAT IS FASHION FOR US</h3></b></i></u>
+    		<h3><p> Fashion is a popular style, especially in clothing, footwear, lifestyle, accessories, makeup, hairstyle and body. Fashion is a distinctive and often constant trend in the style in which people present themselves.</p></h3>
+<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+    	</div>
+    	
+    	
+	</div>
+<b><h2 style="text-align:center"> Womens Fashion </h2></b>
+<center>
+	<a href="#"><button type="button" class="btn btn-primary" id="fashion">Ethnic Fashion</button></a>
+<a href="#"><button type="button" class="btn btn-primary" id="classic">Western </button></a>
+<a href="#"><button type="button" class="btn btn-primary" id="sun">Summer Clothing</button></a>
+</center>
+<div class="container">
+	<div class="row">
+<div class="col-sm-4">
+	<img src="eth1.jpg" alt="eth1" class="wow slideInLeft" style="width: 80%;" >
+	<center>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+	</center>
+</div>
+<div class="col-sm-4">
+	<img src="eth2.jpg" alt="eth2" class="wow slideInUp" style="width: 120%;">
+	<center>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+<div class="col-sm-4">
+	<img src="eth3.png" alt="eth3" class="wow slideInRight" style="width: 140%;">
+	<center>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+</div>
+</div>
+<b><h2 style="text-align:center"> Latest Fashion </h2></b>
+<div class="container">
+	<div class="row">
+		<?php while($fetch=mysqli_fetch_assoc($result)){ $id = $fetch['id']; ?>
+		<div class="col-sm-3">
+			<img src="<?php echo $fetch['productimage']; ?>" style="width:80%; height: 200px;"><br>
+			<?php echo $fetch['productname']; ?><br>
+			<?php echo $fetch['productamount']; ?><br>
+			<a href="buynow.php?id=<?php echo $id; ?>"><button type="submit" class="btn btn-danger" id="submit">Buy Now</button></a>
+			
+		</div>
+		<?php } ?> 
+		<div class="col-sm-4">
+	<img src="fa4.jpg" alt="fa4" class="wow slideInLeft" style="width: 80%;" >
+
+	<center>
+		<label>Rs.750</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+	</center>
+</div>
+<div class="col-sm-4">
+	<img src="fa5.jpg" alt="fa5" class="wow slideInUp" style="width: 90%;">
+	<center>
+		<label>Rs.3500</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+<div class="col-sm-4">
+	<img src="fa6.jpeg" alt="fa6" class="wow slideInRight" style="width: 80%;">
+	<center>
+		<label>Rs.665</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+</div>
+</div>
+<b><h2 style="text-align:center"> Mens Fashion </h2></b>
+<center>
+	<a href="#"><button type="button" class="btn btn-primary" id="fashion">Formals</button></a>
+<a href="#"><button type="button" class="btn btn-primary" id="classic">Jeans </button></a>
+<a href="#"><button type="button" class="btn btn-primary" id="sun">T-shirts/ Shirts</button></a>
+</center>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+	<img src="me1.jpg" alt="me1" class="wow swing" style="width: 80%;" >
+	<center>
+		<label>Rs.800</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+	</center>
+</div>
+<div class="col-sm-4">
+	<img src="me2.jpg" alt="me2" class="wow swing" style="width: 100%;">
+	<center>
+		<label>Rs.3500</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+<div class="col-sm-4">
+	<img src="me3.jpg" alt="me3" class="wow swing" style="width: 85%;">
+	<center>
+		<label>Rs.5000</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+</div>
+</div>
+<b><h2 style="text-align:center"> Latest Fashion </h2></b>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+	<img src="me4.jpg" alt="me4" class="wow swing" style="width: 132%;" >
+	<center>
+		<label>Rs.799</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+	</center>
+</div>
+<div class="col-sm-4">
+	<img src="me5.jpg" alt="me5" class="wow swing" style="width: 100%;">
+	<center>
+		<label>Rs.2500</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+<div class="col-sm-4">
+	<img src="me6.jpg" alt="me6" class="wow swing" style="width: 90%;">
+	<center>
+		<label>Rs.1000</label>
+	<a href="#"><button type="button" class="btn btn-primary" id="shop"><b>Shop Now</b></button></a>
+</center>
+</div>
+</div>
+</div>
+<div class="container">
+	<div class="row">
+<div class="col-sm-6">
+<h2>Message For More Details</h2>
+<form>
+<input type="text" placeholder="ENTER YOUR NAME"  class="form-control wow pulse"><br>
+<input type="text" placeholder="ENTER YOUR EMAIL"  class="form-control wow pulse"><br>
+<input type="text" placeholder="ENTER YOUR PHONE"   class="form-control wow pulse"><br>
+<input type="text" placeholder="ENTER YOUR MESSAGE"   class="form-control wow pulse"><br>
+<button type="button" class="btn btn-primary wow flash" id="submit">Submit Message</button>
+</form>
+</div>
+<div class="col-sm-6">
+<h2>Connect With Us</h2>	
+
+        <a><i class="fa fa-facebook" style="font-size:30px"></i></a>
+        &nbsp;&nbsp;&nbsp;<a><i class="fa fa-linkedin" style="font-size:30px"></i></a>
+        &nbsp;&nbsp;&nbsp;<a><i class="fa fa-twitter" style="font-size:30px"></i></a>
+        &nbsp;&nbsp;&nbsp;<a><i class="fa fa-google" style="font-size:30px"></i></a>
+<br><br>
+        <div class="glyphicon glyphicon-earphone" style="font-size:18px"><b>62226759804</b></div><br><br>
+    	<a><div class="glyphicon glyphicon-envelope" style="font-size:18px"><b>info@examples.com</b></div><br><br></a>
+    	<a><div class="glyphicon glyphicon-link" style="font-size:18px"><b>http://example.com</b></div><br><br></a>
+    	
+  </div>
+</div>
+</div>
+<center style="background-color: #dcdcdc;">
+	<br>
+	<b><p style="font-size:32px; color:black"> Made By Shreeja
+		<i class="glyphicon glyphicon-education"></i></p></b><br>
+</center>
